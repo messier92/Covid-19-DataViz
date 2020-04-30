@@ -26,11 +26,54 @@
   justify-content: center;
 }
 
+.bar-group {
+  opacity: 0.8;
+}
+
+.bar-group-male {
+  opacity: 0.8;
+}
+
+.bar-group-female {
+  opacity: 0.8;
+}
+
 .container_poppyramid {
   border: 5px solid black;
   align-items: center;
   justify-content: center;
 }
+
+.container_donutchart {
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.container_linechart {
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.container_forcegraph {
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 100%;
+}
+
+.container_secretviz {
+  border: 5px solid black;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 100%;
+}
+
 
 .axis-group-x text{
   transform: rotate(-65deg) translateY(-8px) translateX(-35px)
@@ -42,8 +85,24 @@
 
 .pop-pyra-axis text {
   font-size: 16px;
+  color: 5px solid black;
 }
 
 .bar-group-female {
   fill: firebrick;
+}
+
+.Axis path,
+.Axis line {
+  stroke: #E0E0E0;
+}
+
+.Axis text {
+  font-size: 11px;
+  fill: black;
+}
+
+.Axis-Bottom text {
+  transform: rotate(-45deg);
+  text-anchor: end;
 }

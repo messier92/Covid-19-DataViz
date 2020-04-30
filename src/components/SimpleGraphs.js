@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Column, Row } from "simple-flexbox";
 import BarChart from "./barchart";
 import PopPyramid from "./poppyramid";
+import DonutChart from "./donutchart";
+import ScatterLineChart from "./scatterlinechart";
 
 class SimpleGraphs extends React.Component {
 
@@ -21,15 +23,15 @@ class SimpleGraphs extends React.Component {
           </Column>
         </Row>
         
-        <Row vertical="center">
+        <Row vertical="center" className="container_donutchart">
           <Column flexGrow={1} horizontal="center">
-            <h3> Pie Chart </h3>
+           <DonutChart/> 
           </Column>
         </Row>
         
-        <Row vertical="center">
+        <Row vertical="center" className="container_linechart">
           <Column flexGrow={1} horizontal="center">
-          <h3> Line Graph </h3>
+          <ScatterLineChart />
           </Column>
         </Row>
       

@@ -50,7 +50,7 @@ class Bar extends React.Component {
       .attr('x', d => xScale(d.date))
       .attr('y', height)
       .attr('width', xScale.bandwidth())
-
+     
     this.barTransition();
   }
   render() {

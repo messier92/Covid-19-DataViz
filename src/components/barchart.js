@@ -70,10 +70,6 @@ class BarChart extends Component {
     uniqueDateArrays.indexOf(data[step].DATE_OF_CONFIRMATION) === -1 ? uniqueDateArrays.push(data[step].DATE_OF_CONFIRMATION) : console.log("This item already exists");
     }
 
-    // Find out how to make this neater once the project is completed
-    console.log(uniqueDateArrays);
-    console.log(casesPerDay);
-
   // hardcoded values first - find out how to map 2 list of arrays into state
     this.state = {
       data: [
@@ -124,7 +120,13 @@ class BarChart extends Component {
         { date: uniqueDateArrays[44], value: casesPerDay[44] },
         { date: uniqueDateArrays[45], value: casesPerDay[45] },
         { date: uniqueDateArrays[46], value: casesPerDay[46] },
-      ] 
+      ],
+      tooltip: {
+        text: '',
+        visible: false,
+        x: 0,
+        y: 0
+      }
     }
   }
 

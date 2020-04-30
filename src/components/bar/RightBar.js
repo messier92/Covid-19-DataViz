@@ -1,4 +1,4 @@
-// With reference from https://stackblitz.com/edit/d3-react-bar-chart?file=index.js
+// With reference from https://jsbin.com/jalex/1/edit?js,output
 import React from 'react';
 import { select, event } from 'd3-selection';
 import { transition } from 'd3-transition';
@@ -49,7 +49,7 @@ class RightBar extends React.Component {
       .append('rect')
       .attr('class', 'bar')
       .attr('x', height)
-      .attr('y', d => yScale(d.group)+100)
+      .attr('y', d => yScale(d.group)+25)
       .attr('width',  d => xScale(d.female))
 
     this.barTransition();

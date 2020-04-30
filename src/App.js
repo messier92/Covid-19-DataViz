@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import SimpleGraphs from './components/SimpleGraphs';
+import ForceGraph from './components/ForceGraph';
 
 class App extends Component {
 
@@ -14,6 +15,9 @@ class App extends Component {
       </header>
 
       <SimpleGraphs/>
+      <ForceGraph className="container_forcegraph"/>
+
+      <h1 className="container_secretviz">Secret visualisation...tbd end-May</h1>
     
       
 
